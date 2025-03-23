@@ -8,7 +8,7 @@ const port = process.env.PORT || 3000;
 app.use('/images', express.static(path.join(__dirname, 'images')));
 
 // Rota para retornar a imagem
-app.get('/cantada', (req, res) => {
+app.get('/le', (req, res) => {
   res.sendFile(path.join(__dirname, 'images', 'cantada.jpg'));
 });
 
